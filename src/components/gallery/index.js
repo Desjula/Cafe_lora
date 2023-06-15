@@ -4,7 +4,7 @@ export const Gallery = () => {
 
   const elm =  document.createElement("gallery")
   elm.innerHTML = `
-  <section class="gallery">
+  <section class="gallery" id="gallery">
   <div class="container">
     <div class="gallery__content">
       <h2>Nově otevřeno!</h2>
