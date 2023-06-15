@@ -1,7 +1,15 @@
+import { Layer } from "./../layer";
 import "./style.css"
 
 export const Drink = (props) => {
   const {name, ordered, image,} = props;
+
+    const layer = Layer(
+    {
+      color: '#feeeca',
+      label: 'mléčná pěna',
+    }
+  )
   
   return`
     <div class="drink">
@@ -11,10 +19,7 @@ export const Drink = (props) => {
         </div>
         <div class="drink__info">
           <h3>${name}</h3>
-          <div class="layer">
-            <div class="layer__color" style="background-color: #613916"></div>
-            <div class="layer__label">espresso</div>
-          </div>
+          ${layer}
         </div>
       </div>
       <div class="drink__controls">
